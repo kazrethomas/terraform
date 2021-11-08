@@ -21,7 +21,7 @@ resource "google_compute_network" "vpc_network" {
 
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+  name         = var.instance_name
   machine_type = "f1-micro"
     tags         = ["web", "dev"]
 
@@ -38,8 +38,3 @@ resource "google_compute_instance" "vm_instance" {
   }
 }
 
-resource "google_storage_bucket" "static-site" {
-  name          = "image-store.com"
-  location      = "EU"
-
-}

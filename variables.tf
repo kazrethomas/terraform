@@ -16,3 +16,7 @@ variable "zone" {
 variable "network_name" {
   default = "terraform-network"
 }
+
+variable "instance_name" {
+}
+
