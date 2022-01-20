@@ -30,3 +30,13 @@ module "pubsub" {
   topic_name = var.topic_name
 }
 
+module "google_cloud_run" {
+  source     = "../modules/google_cloud_run"
+  google_cloud_run_name = "gcr_name"
+  image = ""
+  latest_revision = false
+  location = ""
+  name = ""
+  percent = 0
+}
+

@@ -19,3 +19,12 @@ network = "shared-net"
 subnetwork = "tier-1"
 ip_range_services = "tier-1-services"
 ip_range_pods = "tier-1-pods"
+
+############ CLOUD RUN BASIC ######################################
+name = "cr-srv"
+location = "us-central1-c"
+image = "ima"
+percent = 100
+latest_revision = true
+
+
