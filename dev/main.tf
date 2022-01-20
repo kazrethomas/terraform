@@ -37,6 +37,6 @@ module "google_cloud_run" {
   latest_revision = false
   location = ""
   name = ""
-  percent = 0
+  percent = 100
 }
 
