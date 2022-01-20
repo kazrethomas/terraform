@@ -16,19 +16,22 @@ variable "bucket_name" {
 variable "topic_name" {
   type = string
 }
-
 variable "cluster_name_suffix" {
   default = ""
 }
+
 variable "ip_range_pods" {
   default = ""
 }
+
 variable "ip_range_services" {
   default = ""
 }
+
 variable "network" {
   default = ""
 }
+
 variable "subnetwork" {
   default = ""
 }
@@ -56,4 +59,3 @@ variable percent {
 variable "latest_revision" {
   type = bool
 }
-
