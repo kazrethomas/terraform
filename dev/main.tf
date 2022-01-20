@@ -32,7 +32,6 @@ module "pubsub" {
 
 module "google_cloud_run" {
   source     = "../modules/google_cloud_run"
-  google_cloud_run_name = "gcr_name"
   image = var.image
   latest_revision = var.latest_revision
   location = var.location
